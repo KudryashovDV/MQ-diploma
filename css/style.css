@@ -1,0 +1,759 @@
+@font-face {
+  font-family: "Open-Sans";
+  src: url('/fonts/OpenSans-Regular.ttf');
+  src: url('/fonts/OpenSans-Regular.woff') format('woff'),
+  url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url('/fonts/OpenSans-Bold.ttf');
+  src: url('/fonts/OpenSans-Bold.woff') format('woff'),
+  url('/fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: "Open-Sans", sans-serif;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+  flex: wrap;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+
+.header {
+  position: relative;
+  background-color: black;
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menu_wrapper {
+  display: flex;
+  color: white;
+  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 179px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  /*padding-top: 10px;*/
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.nav-list-item:nth-child(n + 2) {
+  margin-left: 35px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 13px;
+}
+
+
+.banner_title {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;;
+  flex-wrap: wrap;*/
+  position: relative;
+  margin:0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 128px;
+  padding-bottom: 147px;
+  color: white;
+  width: 700px;
+  font-size: 45px;
+  text-align: center;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+  line-height: 75px;
+}
+
+.blog_row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.main {
+  flex: 1 0 66%;
+  
+  margin-right: 120px;
+  padding-top: 63px;
+}
+
+.main-photo-info {
+  display: flex;
+}
+
+.tag-menu {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.tag-link {
+  text-decoration: none;
+}
+
+.tag-list {
+  margin-right: 20px;
+}
+
+.main-text {
+  width: 367px;
+  margin-left: 30px;
+}
+
+
+
+.box {
+  margin-bottom: 59px;
+}
+ 
+.img {
+    width: 380px;
+}
+
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
+}
+
+.tag-link {
+  text-decoration: none;
+  color: #b59f5b;
+  font-family: "Open-Sans" , sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.name {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-family: "Open-Sans" , sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main-data-author {
+  display: flex;
+}
+
+.data-author {
+  display: flex;
+  font-family: "Open-Sans";
+  margin-top: 0;
+  padding: 0;
+}
+
+.data {
+  font-size: 12px;
+  font-family: "Open-Sans";
+  color: #929292;
+}
+
+.author {
+  font-size: 12px;
+  font-family: "Open-Sans";
+  font-weight: bold;
+}
+
+.author:last-child {
+  margin-left: 15px;
+}
+
+.description-main {
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: "Open-Sans";
+  line-height: 22px;
+}
+
+/*.image-place {
+  flex: 1 1 380px;
+}*/
+.image-place .img {
+  min-width: 380px;
+  min-height: 293px;
+}
+.info-main {
+  margin-left: 30px;
+  flex: 1 1 48%;
+}
+
+.aside {
+  width: 272px;
+}
+
+.title {
+  margin-top: 63px;
+  text-align: center;
+}
+
+.caption {
+  font-family: "Open-Sans";
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 3px 14px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 66px;
+  background: #e1d9bd;
+  margin: 5px auto;
+  margin-bottom: 35px;
+}
+
+.post-aside {
+  display: flex;
+}
+
+.post-aside {
+  margin-bottom: 20px;
+}
+
+.img-aside {
+  width: 70px;
+}
+
+.name-aside {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-family: "Open-Sans";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 8px;
+}
+
+.info-aside {
+  margin-left: 20px;
+}
+.info-aside h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.aside-place-data {
+  margin-top: -5px;
+}
+.page {
+  margin-top: 60px;
+  margin-bottom: 52px;
+}
+
+.search {
+  display: flex;
+}
+
+.search-group {
+  flex: 1;
+}
+
+.page-mail {
+  margin-top: 26px;
+  margin-bottom: 52px;
+}
+
+.search-hint {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.field {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f4f7f6;
+  padding: 0 18px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  height: 48px;
+  border: 0;
+}
+
+.field:focus {
+  outline: none;
+  border-color: #9b59b6;
+}
+
+.button {
+  background-image: url(https://netology-code.github.io/html-2-homeworks/form-elements/search-field/img/search.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center center;
+  width: 48px;
+  height: 48px;
+  border: 0 solid #dadada;
+  background-color: #b59f5b;
+  font-size: 14px;
+}
+
+
+.field-mail {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 18px;
+  margin: 0;
+  vertical-align: middle;
+  font-size: 13px;
+  height: 48px;
+  background-color: #f4f7f6;
+  font-family: "Open-Sans";
+  border: 0;
+}
+
+.field-mail:focus {
+  outline: none;
+  border-color: #9b59b6;
+}
+
+.button-subscription {
+  width: 100%;
+  height: 48px;
+  background-color: #b59f5b;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 18px;
+  border: 0;
+}
+
+.tags {
+  margin-top: 23px;
+  margin-bottom: 60px;
+}
+
+.choice-tags {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 270px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.tags-link {
+  display: block;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: black;
+  padding: 5px 13px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+  border: 3px solid #eeeeee;
+}
+
+.themes {
+  margin-top: 13px;
+  line-height: 40px;
+}
+
+.theme {
+  margin-left: 5px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.all-themes {
+  border-bottom: 1px solid #eeeeee;
+  vertical-align: top;
+}
+
+.word {
+  display: inline-block;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.number {
+  display: inline-block;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #b59f5b;
+  vertical-align: top;
+  padding-left: 5px;
+}
+
+/* сейчас в тренде */
+
+.now_in_trend {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+.line_title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Open Sans",sans-serif;
+  text-align: center;
+  position: relative;
+}
+.line_title::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 65px;
+  height: 2px;
+  background:#E1D9BD;
+}
+
+.trend_wrap {
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.trend_item {
+  flex:1 1 25%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 320px;
+  margin: 1px;
+  
+}
+.trend_box {
+  border: 3px solid #85764f;
+  padding: 35px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.trend_1 {
+  background:url(/img/slider_1.jpg) no-repeat center/cover;
+}
+.trend_2 {
+  background:url(/img/slider_2.jpg) no-repeat center/cover;
+}
+
+.trend_3 {
+  background:url(/img/slider_3.jpg) no-repeat center/cover;
+}
+
+.trend_4 {
+  background:url(/img/slider_4.jpg) no-repeat center/cover;
+}
+
+.trend_title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Open Sans",sans-serif;
+  color:#fff;
+}
+
+/* товары */
+
+.our_products {
+  padding-top: 40px;
+}
+.products_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.prod_item {
+  width: 340px;
+}
+.prod_img {
+  display: block;
+  position: relative;
+  width: calc(100% - 40px);
+  height: auto;
+  margin:0 auto;
+  margin-bottom: -30px;
+}
+.prod_box {
+  position: relative;
+  z-index: 3;
+  height: 260px;
+  border:3px solid #D3C59D;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+}
+.prod_title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Open Sans",sans-serif;
+  margin-bottom: 6px;
+}
+.prod_description {
+  font-size: 15px;
+}
+.prod_description a {
+  color:#b59f5b;
+}
+.prod_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 25px;
+}
+.old_price {
+  text-decoration:line-through;
+  font-size:14px;
+  font-weight: bold;
+  line-height: 1.2;
+
+}
+.price {
+  font-size:20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.to_shop_btn {
+    background:#B59F5B;
+    text-align: center;
+    font-size:14px;
+    font-weight: bold;
+    padding: 15px;
+    width: 140px;
+    text-decoration: none;
+    color:#fff;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  
+  background-color: #f4f7f6;
+  
+}
+
+.socials-item {
+  list-style-type: none;
+  padding: 32px 0;
+}
+
+.socials-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+.socials-link-twitter {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+}
+
+.socials-link-pinterest {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+}
+
+.socials-link-facebook {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+}
+
+.socials-link-instagram {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+}
+
+.socials-link-tumblr {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+}
+
+.socials-link-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.socials-item:nth-child(n+2) {
+  margin-left: 20px;
+}
+   
+.copyright {
+  display: block;
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 40px;
+}
+
+.copyright-information {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #999999;
+  text-decoration: none;
+}
+.burder_nav {
+  display: none;
+}
+/* responsive 
+
+NOEMI_mq_desktop.psd – макет для экрана шириной 1200px и более,
+NOEMI_mq_tablet.psd – макет для экрана шириной 768px,
+NOEMI_mq_mobile.psd – макет для экрана шириной 360px.
+*/
+
+/* tablet */
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .burder_nav {
+    display: block;
+  }
+  .nav .nav-list {
+    display: none;
+  }
+  .header {
+    padding-left: 20px ;
+    padding-right: 20px;
+  }
+  .container {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .banner_title {
+    width:100%;
+  }
+
+  .trend_wrap {
+    flex-wrap: wrap;
+  }
+  
+  .main {
+    flex: 0 1 55%;
+    width: auto;
+    margin-right: 0px;
+    max-width: 400px;
+  }
+  .aside {
+    width: auto;
+    flex: 0 1 40%;
+    max-width: 250px;
+  }
+  .box {
+    display: block !important;
+  }
+
+  .products_wrap {
+    flex-wrap: wrap;
+  }
+
+}
+
+/* mobile */
+@media (max-width: 640px)  {
+  .burder_nav {
+    display: block;
+  }
+  .burder_nav {
+    display: block;
+  }
+  .nav .nav-list {
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+}
+.banner_title {
+  width:100%;
+}
+.box {
+  display: block !important;
+}
+  .trend_wrap {
+    flex-wrap: wrap;
+  }
+  .products_wrap {
+    flex-wrap: wrap;
+  }
+
+}
