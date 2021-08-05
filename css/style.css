@@ -500,18 +500,18 @@ ul{
 }
 
 .trend_1 {
-  background:url(/img/slider_1.jpg) no-repeat center/cover;
+  background:url(../img/slider_1.jpg) no-repeat center/cover;
 }
 .trend_2 {
-  background:url(/img/slider_2.jpg) no-repeat center/cover;
+  background:url(../img/slider_2.jpg) no-repeat center/cover;
 }
 
 .trend_3 {
-  background:url(/img/slider_3.jpg) no-repeat center/cover;
+  background:url(../img/slider_3.jpg) no-repeat center/cover;
 }
 
 .trend_4 {
-  background:url(/img/slider_4.jpg) no-repeat center/cover;
+  background:url(../img/slider_4.jpg) no-repeat center/cover;
 }
 
 .trend_title {
