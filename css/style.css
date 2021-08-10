@@ -17,11 +17,14 @@
   font-style: normal;
   font-weight: bold;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+ }
 body,html {
   margin: 0;
   padding: 0;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
 }
 ul{
   padding: 0;
@@ -31,7 +34,7 @@ ul{
 
 .d-flex {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 .container {
   width: 1170px;
@@ -41,6 +44,8 @@ ul{
 
 .header {
   position: relative;
+  padding-top: 30px;
+  padding-bottom: 147px;
   background-color: black;
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
   background-repeat: no-repeat;
@@ -61,7 +66,7 @@ ul{
 .menu_wrapper {
   display: flex;
   color: white;
-  padding-top: 30px;
+  
   justify-content: space-between;
   align-items: center;
 }
@@ -92,7 +97,7 @@ ul{
 .nav-link {
   text-decoration: none;
   color: white;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
 
@@ -107,34 +112,38 @@ ul{
   text-align: center;
   text-transform: uppercase;
   margin-top: 128px;
-  padding-bottom: 147px;
   color: white;
   width: 700px;
   font-size: 45px;
   text-align: center;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  line-height: 75px;
+  line-height: 1.6;
 }
 
 .blog_row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 63px;
   
 }
 
 .main {
   flex: 1 0 66%;
-  
   margin-right: 120px;
-  padding-top: 63px;
 }
 
 .main-photo-info {
   display: flex;
 }
-
+.box-image {
+  flex: 1 1 48%;
+  max-width: 48%;
+}
+.box-image .img {
+  width: 100%;
+}
 .tag-menu {
   display: flex;
   list-style-type: none;
@@ -148,20 +157,18 @@ ul{
 .tag-list {
   margin-right: 20px;
 }
+.tag-list:last-child {
+  margin-right: 0;
+}
 
 .main-text {
   width: 367px;
   margin-left: 30px;
 }
 
-
-
 .box {
   margin-bottom: 59px;
-}
- 
-.img {
-    width: 380px;
+  justify-content: space-between;
 }
 
 .tag {
@@ -177,7 +184,7 @@ ul{
 .tag-link {
   text-decoration: none;
   color: #b59f5b;
-  font-family: "Open-Sans" , sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 14px;
 }
@@ -186,7 +193,7 @@ ul{
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  font-family: "Open-Sans" , sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
@@ -197,20 +204,20 @@ ul{
 
 .data-author {
   display: flex;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   margin-top: 0;
   padding: 0;
 }
 
 .data {
   font-size: 12px;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   color: #929292;
 }
 
 .author {
   font-size: 12px;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -221,17 +228,14 @@ ul{
 .description-main {
   margin-top: 25px;
   font-size: 15px;
-  font-family: "Open-Sans";
-  line-height: 22px;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 /*.image-place {
   flex: 1 1 380px;
 }*/
-.image-place .img {
-  min-width: 380px;
-  min-height: 293px;
-}
+
 .info-main {
   margin-left: 30px;
   flex: 1 1 48%;
@@ -242,16 +246,15 @@ ul{
 }
 
 .title {
-  margin-top: 63px;
   text-align: center;
 }
 
 .caption {
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 3px 14px;
+  margin-bottom: 5px;
 }
 
 .title::after {
@@ -280,10 +283,10 @@ ul{
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.5;
   margin-top: 8px;
 }
 
@@ -363,7 +366,7 @@ ul{
   font-size: 13px;
   height: 48px;
   background-color: #f4f7f6;
-  font-family: "Open-Sans";
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   border: 0;
 }
 
@@ -378,7 +381,7 @@ ul{
   background-color: #b59f5b;
   vertical-align: middle;
   font-size: 14px;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -402,7 +405,7 @@ ul{
 
 .tags-link {
   display: block;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
@@ -416,7 +419,7 @@ ul{
 
 .themes {
   margin-top: 13px;
-  line-height: 40px;
+ 
 }
 
 .theme {
@@ -428,6 +431,8 @@ ul{
 .all-themes {
   border-bottom: 1px solid #eeeeee;
   vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .word {
@@ -435,7 +440,7 @@ ul{
   margin-top: 3px;
   margin-bottom: 5px;
   text-decoration: none;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: black;
@@ -443,7 +448,7 @@ ul{
 
 .number {
   display: inline-block;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 12px;
   color: #b59f5b;
@@ -455,14 +460,13 @@ ul{
 
 .now_in_trend {
   padding-top: 50px;
-  padding-bottom: 0px;
 }
 .line_title {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   text-align: center;
   position: relative;
 }
@@ -488,7 +492,7 @@ ul{
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  height: 320px;
+  min-height: 320px;
   margin: 1px;
   
 }
@@ -515,13 +519,16 @@ ul{
 }
 
 .trend_title {
+  
+}
+.trend_title a {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   color:#fff;
+  text-decoration: none;
 }
-
 /* товары */
 
 .our_products {
@@ -534,7 +541,7 @@ ul{
 }
 
 .prod_item {
-  width: 340px;
+  width: 30%;
 }
 .prod_img {
   display: block;
@@ -547,17 +554,18 @@ ul{
 .prod_box {
   position: relative;
   z-index: 3;
-  height: 260px;
+  /*height: 260px;*/
   border:3px solid #D3C59D;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 25px;
+  padding-bottom: 30px;
 }
 .prod_title {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   margin-bottom: 6px;
 }
 .prod_description {
@@ -606,14 +614,14 @@ ul{
 .socials {
   display: flex;
   justify-content: center;
-  
+  padding: 32px 0;
   background-color: #f4f7f6;
   
 }
 
 .socials-item {
   list-style-type: none;
-  padding: 32px 0;
+  
 }
 
 .socials-link {
@@ -664,7 +672,7 @@ ul{
 }
 
 .copyright-information {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 12px;
   color: #999999;
