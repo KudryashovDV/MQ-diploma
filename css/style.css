@@ -398,11 +398,14 @@ ul{
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  width: 270px;
+  
   list-style-type: none;
   padding: 0;
 }
-
+.choice-tags li {
+  margin-top: 5px;
+  margin-left: 5px;
+}
 .tags-link {
   display: block;
   font-family: "Open-Sans", Arial, Helvetica, sans-serif;
@@ -411,19 +414,13 @@ ul{
   text-transform: uppercase;
   color: black;
   padding: 5px 13px;
-  margin-top: 5px;
-  margin-left: 5px;
   text-decoration: none;
   border: 3px solid #eeeeee;
 }
 
-.themes {
-  margin-top: 13px;
- 
-}
 
 .theme {
-  margin-left: 5px;
+  margin-top: 13px;
   list-style-type: none;
   padding-left: 0;
 }
@@ -482,18 +479,21 @@ ul{
 .trend_wrap {
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   
 
 }
 .trend_item {
-  flex:1 1 25%;
+  flex:1 1 22%;
+  max-width: 23%;
+  border:2px solid #fff;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
   min-height: 320px;
-  margin: 1px;
+  /*margin: 1px;*/
   
 }
 .trend_box {
@@ -550,15 +550,16 @@ ul{
   height: auto;
   margin:0 auto;
   margin-bottom: -30px;
+  text-align: center;
 }
 .prod_box {
   position: relative;
   z-index: 3;
-  /*height: 260px;*/
+  height: 200px;
   border:3px solid #D3C59D;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 25px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 .prod_title {
@@ -604,10 +605,7 @@ ul{
     color:#fff;
 }
 
-
 .footer {
-  display: flex;
-  justify-content: center;
   margin-top: 64px;
 }
 
@@ -667,6 +665,7 @@ ul{
 .copyright {
   display: block;
   text-align: center;
+  margin:0 auto;
   margin-top: 73px;
   margin-bottom: 40px;
 }
