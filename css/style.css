@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Open-Sans";
-    src: url('/fonts/OpenSans-Regular.woff') format('woff');
+    src: url('../fonts/OpenSans-Regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Open-Sans";
-    src: url('/fonts/OpenSans-Bold.woff') format('woff');
+    src: url('../fonts/OpenSans-Bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
 }
@@ -695,6 +695,92 @@ ul {
     display: none;
 }
 
+.pop_up_wrap {
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop_up {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    z-index: 111;
+    max-width: 390px;
+    padding: 30px;
+    background: #fff;
+}
+
+.pop_up .close_modal {
+    position: absolute;
+    right: 1px;
+    top: -26px;
+    z-index: 111;
+}
+
+.pop_up .close_modal img {
+    width: 17px;
+    height: 17px;
+}
+
+.input_group {
+    margin-bottom: 25px;
+}
+
+.input_title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.input_group label {
+    font-size: 14px;
+}
+
+.input_radio label {
+    padding-right: 15px;
+}
+
+.input_group select {
+    display: block;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: #F4F7F6;
+    font-size: 14px;
+}
+
+.input_group textarea {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: #F4F7F6;
+    font-size: 14px;
+}
+
+.modal_btn {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #B59F5B;
+}
+
 
 /* responsive 
 
@@ -716,7 +802,7 @@ NOEMI_mq_mobile.psd – макет для экрана шириной 360px.
     .header {
         padding-left: 20px;
         padding-right: 20px;
-        background: url(/img/banner-bg-tablet.jpg) no-repeat center/cover;
+        background: url(../img/banner-bg-tablet.jpg) no-repeat center/cover;
     }
     .container {
         max-width: 100%;
@@ -732,10 +818,10 @@ NOEMI_mq_mobile.psd – макет для экрана шириной 360px.
         flex-wrap: wrap;
     }
     .main {
-        flex: 0 1 55%;
+        flex: 1 1 60%;
         width: auto;
         margin-right: 0px;
-        max-width: 400px;
+        max-width: 60%;
     }
     .trend_item {
         flex: 1 1 50%;
@@ -779,6 +865,11 @@ NOEMI_mq_mobile.psd – макет для экрана шириной 360px.
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box;
+    }
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+        background: url(../img/banner-mobile.jpg) no-repeat center/cover;
     }
     .burder_nav {
         display: block;
@@ -858,5 +949,10 @@ NOEMI_mq_mobile.psd – макет для экрана шириной 360px.
     }
     .products_wrap {
         flex-wrap: wrap;
+    }
+    .pop_up {
+        width: 90%;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
