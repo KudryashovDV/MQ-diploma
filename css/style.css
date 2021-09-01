@@ -45,7 +45,7 @@ ul {
     padding-top: 30px;
     padding-bottom: 147px;
     background-color: black;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-image: url(../img/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -753,8 +753,11 @@ ul {
     border: none;
     outline: none;
     width: 100%;
-    background: #F4F7F6;
     font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../svg/form-arrows.svg) no-repeat 97% 50%/12px 18px, #F4F7F6;
 }
 
 .input_group textarea {
@@ -779,6 +782,38 @@ ul {
     border: none;
     outline: none;
     background: #B59F5B;
+}
+
+
+/* checkboxes */
+
+.pop_up input[type=checkbox],
+.pop_up input[type=radio] {
+    display: none;
+}
+
+
+/* Radio buttons */
+
+.pop_up input[type=radio]+label span {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../svg/form-empty-circle.svg) no-repeat center/cover;
+    line-height: 0.35em;
+    margin-right: 3px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pop_up input[type=radio]:checked+label span {
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    background: url(../svg/form-circle.svg) no-repeat center/cover;
 }
 
 
